@@ -44,48 +44,39 @@
 
       <article class="article">
         <div class="article-container">
-          <h2 class="article-title">DBエクスポート</h2>
+          <h2 class="article-title">クイズアプリ</h2>
           <div class="article-body">
             <p>
-              <img src="img/works-PySimpleGUI-DBtoCSV.png" alt="">
+              <img src="img/works-Flutter_Quiz.png" alt="">
             </p>
             <p>
-              GUIアプリの自学用にPySimpleGUIを使ったアプリを開発しました。<br>
-              指定されたDBからテーブル、カラムを選択するとcsvファイルにエクスポートするアプリです。<br>
+              クイズアプリを開発しました<br>
             </p>
             <h3>URL</h3>
-            <p><a href="https://github.com/takunoji/PySImpleGUI_DBtocsv" target="_blank" rel="noopener">GitHubに飛びます</a></p>
+            <p><a href="https://takunoji.github.io/fluter_QuizApp" target="_blank" rel="noopener">こちらから実際のアプリを確認できます</a></p>
             <h3>担当</h3>
             <p>デザイン・コーディング</p>
             <h3>サイトの目的</h3>
             <p>
-              DBは用意してあるけど、SQLは使えない人向けに、エクスポートするアプリが欲しいとの要望で開発<br>
-              GUIも欲しいとのことでwebアプリではなくGUIアプリで開発しました<br>
+              FlutterのUIを一通り自学するため<br>
+              選択しだいで結果を表示するGUIにしています<br>
             </p>
             <h3>ターゲット</h3>
             <p>
-              DBは用意してあるけど、SQLは使えない人向け<br>
+              単語帳とかに使えそう<br>
             </p>
             <h3>デザインについて</h3>
             <p>
-              PySimpleGUIででできる範囲で作成。
+              Flutterのみで作成。
             </p>
             <p>
             </p>
             <h3>コーディングについて</h3>
             <p>
-              DBにアクセスする部分は公開していただいている方がいたので参考にさせていただきました。<br>
-              https://resanaplaza.com/2021/09/15/%E3%80%90-%E3%82%B3%E3%83%94%E3%83%9A%E3%81%A7ok%E3%80%91%EF%BC%99%E5%89%B2%E3%81%AE%E6%A9%9F%E8%83%BD%E3%82%92%E7%B6%B2%E7%BE%85%EF%BC%81pyton%E3%81%8B%E3%82%89postgresql%E3%82%92%E6%89%B1%E3%81%86/<br>
-              また、選択したテーブルからカラムを複数選択する方法も参考にさせていただきました
-              https://mebee.info/2021/10/02/post-34109/#:~:text=Listbox%E3%82%92%E8%A4%87%E6%95%B0%E9%81%B8%E6%8A%9E%E5%8F%AF%E8%83%BD%E3%81%AB%E3%81%99%E3%82%8B%E3%81%AB%E3%81%AF%E3%80%8Cselect_mode,LISTBOX_SELECT_MODE_MULTIPLE%E3%80%8D%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82<br>
+              表には出ていませんが、きれいなコードを書くためにファイル分割して<br>
+              各ファイルに明確な役割を持たせる部分に苦労しました。
             </p>
             <p>
-              特に苦労したのが、選択したテーブル、カラムからデータを取得する部分。<br>
-              カラムは複数選択できるようにしたかったが、ListBoxから取得した文字列はList型なので、データ取得時のselect文に入れない<br>
-              PySimpleGUIは画面更新(Window.update())で更新したメッセージ以外はprint()で表示できないらしく<br>
-              データ取得ボタンを押したら急にアプリ(window)が消えるということが多発した。<br>
-              文法が間違っているのはわかるのだけど、どこで落ちているのかがわからない<br>
-              結局、ボタンを押す処理の直前でprint()を使って少しずつデバッグして解決<br>
             </p>
           </div>
           <div class="home-link">
